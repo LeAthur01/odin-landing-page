@@ -3,7 +3,7 @@ body {
     font-family:'Courier New', Courier, monospace;
 }
 
-.container {
+.section {
     padding: 50px;
 }
 
@@ -31,17 +31,42 @@ button {
     background-color: #3882F6;
 }
 
-.splitting-flex-container {
-    display: flex;
+.container {
     width: 1000px;
     margin: auto;
 }
 
-.splitting-flex-container img {
+.flex {
+    display: flex;
+}
+
+.container.flex img {
     width: 100%;
 }
 
-.splitting-flex-container div {
+.container.flex div {
     flex-grow: 1;
+}
+
+.container.info h2,
+.container.info p {
+    text-align: center;
+}
+
+.container.info h2 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1f2937;
+}
+
+.container.info img {
+    width: 100%;
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+}
+
+.container.info .flex {
+    gap: 50px;
+    justify-content: space-between;
 }
 
